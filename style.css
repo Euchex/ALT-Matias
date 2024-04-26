@@ -15,6 +15,10 @@ font-family: "Nunito", sans-serif;
 --bg-color: #000000;
 --text-color: #ffffff;
 --btn-color: #c9f31d;
+--box-color: #141410;
+--box1-color: #181a18;
+--box2-color: #1d1d1d;
+--box3-color: #191918;
 }
 
 html {
@@ -28,8 +32,8 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 5% 2rem;
+    /* min-height: 100vh; */
+    padding-top: 10rem;
 }
 
 header {
@@ -79,33 +83,33 @@ header {
     cursor: pointer;
 }
 
-section {
-    background: url(./img/banner-bg.png) left no-repeat;
-    background-position: center 0, 0, 90px;
-    background-size: 99%;
-}
-
 .home {
     display: flex;
     flex-direction: row;
+    background: url(./img/banner-bg.png) left no-repeat;
+    background-position: center -25px, 0px, 90px;
+    background-size: 99%;
+    margin-bottom: -5px;
 }
 
 .free {
     font-size: 22px;
     padding-top: 90px;
-    width: 60%;
-    margin-right: 50px;
-    border-bottom: 2px solid rgba(245, 240, 240, 0.2);
+    width: 50%;
+    margin-left: 70px;
+    border-bottom: 1.5px solid rgb(245, 240, 240);
 }
 
 .fes-con h1 {
     font-size: 80px;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 95px;
+    margin-left: 70px;
 }
 
 .video {
     padding-top: 50px;
+    margin-left: 70px;
 }
 
 .wp {
@@ -134,11 +138,56 @@ section {
     }
   }
 
-  /* .sec-con img {
-    margin-bottom: 500px;
-  } */
-
   .video i {
     font-size: 7rem;
     cursor: pointer;
+  }
+
+  marquee{
+    width: 100%;
+    padding: 30px;
+    background-color: var(--btn-color);
+    z-index: 1;
+  }
+
+  marquee img {
+    margin-right: 40px;
+  }
+
+  .star {
+    background: var(--box-color);
+    align-items: center;
+  }
+
+  .star img {
+    margin-left: 650px;
+  }
+  
+  .star h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 30px
+  }
+
+  #skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 370px;
+    margin-top: 40px;
+  }
+
+  #skill p {
+    padding: 20px;
+    background: var(--box1-color);
+    border-radius: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 20px;
+    font-size: large;
+  }
+
+  .yellow-background {
+    background-color: var(--btn-color) !important;
   }
